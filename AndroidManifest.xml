@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Why this app:
+Some person I know had problems changing his ringtone.
+He pressed the 'Always' button in the intent-chooser, but the doesnt know how the reset it.
+So I made this app, that will launch a RingtonePicker intent.
+//-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="nl.frankkie.ringtonepickerlauncher"
+          android:versionCode="1"
+          android:versionName="1.0">
+    
+    <uses-sdk 
+        android:minSdkVersion="11"
+        android:targetSdkVersion="14"        
+    />
+    
+    <application 
+        android:theme="@android:style/Theme.Holo.Light"
+        android:label="@string/app_name" 
+        android:icon="@drawable/ic_launcher">
+        <activity android:name="MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

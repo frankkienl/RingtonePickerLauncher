@@ -2,6 +2,9 @@
 *.apk
 *.ap_
 
+# Dont ignore release builds (mod by @F)
+!/*-release.apk
+
 # Files for the Dalvik VM
 *.dex
 
@@ -34,7 +37,8 @@ proguard/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
